@@ -2,10 +2,41 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective JavaScript: Frogger</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="playerCharacters" class="modal">
+        <div class="model-wrapper">
+            <div class="modal-header">
+                <h1 style="font-family: 'Cabin Sketch', cursive;">Click To Select A Character</h1>
+            </div>
+            <br>
+            <div class="modal-content">
+                <div class="modal-body">
+                   <table id="gameCharacters" style="margin: 0 auto;">
+                       <tbody>
+                           <tr>
+                               <td id="character1" class="character"><img src="./images/char-boy.png"></td>
+                               <td id="character2" class="character"><img src="./images/char-cat-girl.png"></td>
+                               <td id="character3" class="character"><img src="./images/char-horn-girl.png"></td>
+                               <td id="character4" class="character"><img src="./images/char-pink-girl.png"></td>
+                               <td id="character5" class="character"><img src="./images/char-princess-girl.png"></td>
+                           </tr>
+                       </tbody>
+                   </table>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <button id="playButton" type="button" class="modal-button">
+                        <h1 style="font-family: 'Cabin Sketch', cursive;">Play!</h1>
+                    </button>
+                </div>
+            </div>
+            </div>
+    </div>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>

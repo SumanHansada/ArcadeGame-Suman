@@ -1,3 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
 body {
     text-align: center;
 }
+
+/*
+ * Styles for the modal components
+ */
+
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-image: url("/images/brick-path.png");
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  .modal-wrapper {
+    width: 100%;
+    margin: 100px auto;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    border-radius: 8px;
+  }
+  .modal-header {
+    color: #fff;
+    margin: 200px 0px auto;
+  }
+  .modal-header h1,h2 {
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .modal-body {
+    text-align: center;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    color: white;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .modal-button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Coda", cursive;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    background: transparent;
+    width: 150px;
+  }
+  
+  .modal-button:hover {
+    background-image: url("/images/blue-stone.png");
+    cursor: pointer;
+  }
+
+  .modal-button:disabled {
+    background: transparent;
+  }
+  
+  @media all and (max-width: 30em) {
+    .modal-button {
+      display: block;
+      margin: 0.4em auto;
+    }
+  }
+  
+  .modal-row {
+    display: table; /* Allow the centering to work */
+    margin: 0 auto;
+  }
+  
+  .modal-stars {
+    list-style: none;
+    min-width: 400px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .modal-stars li {
+    display: inline;
+  }
+  
+  /* The Close Button */
+  .modal-close {
+    color: white;
+    float: right;
+    margin-right: 10px;
+    font-size: 30px;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .character:hover {
+      background-image: url("/images/grass-block.png");
+      cursor: pointer;
+    }
+    
+  
