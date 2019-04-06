@@ -33,7 +33,7 @@ window.onload = function() {
                     tableData[j].removeAttribute("style");}
                 else
                 { 
-                item.setAttribute("style", "background-image:url('../images/grass-block.png')");                
+                item.setAttribute("style", "background-image:url('./images/grass-block.png')");                 
                 document.getElementById("playButton").disabled = false;            
                 }    
             }  
