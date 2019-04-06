@@ -70,6 +70,10 @@ class Player {
         ctx.drawImage(Resources.get(this.playerCharacter), this.playerPositionX, this.playerPositionY);
     }
 
+    changeCharacter(playerCharacter) {
+        this.playerCharacter = playerCharacter;
+    }
+
     handleInput (key) {
         if(key == 'left')
         {
@@ -108,8 +112,6 @@ class Player {
 }
 
 
-
-
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
@@ -123,9 +125,7 @@ allEnemies.push(
 let player = new Player(200, 405, 'images/char-boy.png');
 let canvasDiv = document.getElementsByTagName('canvas')[0];
 let score = 0;
-let table; // This have to be the ID of your table, not the tag
-let tableRow;
-let tableData;
+
 
 function gameOver()
 {
@@ -134,15 +134,6 @@ function gameOver()
     scoreDiv.innerHTML = 'Score - ' + score;
 }
 
-
-let charactersModal = document.getElementById("playerCharacters");
-function openCharactersModal() {
-    charactersModal.style.display = "block";
-}
-
-function closeCharacterModal() {
-    charactersModal.style.display = "none";
-}
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
@@ -156,59 +147,3 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
-
-// Code for Creating a start page to select a character
-
-window.onload = function() {
-    openCharactersModal();
-    table = document.getElementById("gameCharacters");     tableRow = table.getElementsByTagName("tr");
-    tableData = tableRow[0].getElementsByTagName("td");
-    document.getElementById("playButton").disabled = true;
-
-    // Add Click Event Handler To Select Character
-    for (let n=0; n<tableData.length; n++)
-    {
-        let item = tableData[n];
-        item.addEventListener("click", function() {
-            console.log(item);
-            for(let j=0; j< tableData.length; j++)
-            {             
-                let checkAttribute = tableData[j].hasAttribute("style");
-                if(checkAttribute && j !== n)
-                {
-                    tableData[j].removeAttribute("style");}
-                else
-                { 
-                item.setAttribute("style", "background-image:url(/images/grass-block.png)");                
-                document.getElementById("playButton").disabled = false;            
-                }    
-            }  
-        });
-    }
-
-    let playButton = document.getElementById("playButton");
-    playButton.addEventListener("click", function() {
-        for(let j=0; j< tableData.length; j++)
-        {             
-            let checkAttribute = tableData[j].hasAttribute("style");
-            if(checkAttribute)
-            {
-                let pathArr = tableData[j].firstChild.src.split('/'); 
-                console.log(pathArr[pathArr.length-1]);
-                player = new Player(200, 405, 'images/' + pathArr[pathArr.length-1]);
-                console.log(typeof(player.playerCharacter));
-            }
-        } 
-        closeCharacterModal();
-        gameReset();
-    });
-
-
-
-};
-
-gameReset = function()
-{
-
-    
-};

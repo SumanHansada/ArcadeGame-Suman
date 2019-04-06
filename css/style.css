@@ -58,12 +58,12 @@ body {
     color: #ffffff;
     text-align: center;
     transition: all 0.2s;
-    background: transparent;
+    background: transparent;    
+    background-image: url("/images/blue-stone.png");
     width: 150px;
   }
   
   .modal-button:hover {
-    background-image: url("/images/blue-stone.png");
     cursor: pointer;
   }
 
