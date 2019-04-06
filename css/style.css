@@ -45,7 +45,7 @@ body {
     text-align: center;
   }
   
-  .modal-button {
+  .play-button {
     display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #ffffff;
@@ -63,16 +63,16 @@ body {
     width: 150px;
   }
   
-  .modal-button:hover {
+  .play-button:hover {
     cursor: pointer;
   }
 
-  .modal-button:disabled {
+  .play-button:disabled {
     background: transparent;
   }
   
   @media all and (max-width: 30em) {
-    .modal-button {
+    .play-button {
       display: block;
       margin: 0.4em auto;
     }
@@ -83,34 +83,69 @@ body {
     margin: 0 auto;
   }
   
-  .modal-stars {
-    list-style: none;
-    min-width: 400px;
-    padding: 0px;
-    margin: 0px;
-  }
-  .modal-stars li {
-    display: inline;
-  }
-  
-  /* The Close Button */
-  .modal-close {
-    color: white;
-    float: right;
-    margin-right: 10px;
-    font-size: 30px;
-  }
-  
-  .modal-close:hover,
-  .modal-close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
   .character:hover {
       background-image: url("/images/grass-block.png");
       cursor: pointer;
     }
-    
+   
+  .score-panel .life{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .score-panel .life li {
+    list-style: none;
+    display: inline-block;
+    width: 40px;
+  }
+
+  .score-panel .score {
+    font-family: 'Cabin Sketch', cursive;
+    margin: 0px;
+  }
+
+  .gameOverModel {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      background-image: url("/images/blue-stone.png");
+      background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
   
+  
+  .restart-button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Coda", cursive;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    background: transparent;    
+    background-image: url("/images/blue-stone.png");
+    width: 250px;
+  }
+  
+  .restart-button:hover {
+    cursor: pointer;
+  }
+
+  .restart-button:disabled {
+    background: transparent;
+  }
+  
+  @media all and (max-width: 30em) {
+    .restart-button {
+      display: block;
+      margin: 0.4em auto;
+    }
+  }

@@ -1,5 +1,7 @@
 /*jshint esversion: 6 */ 
 
+// This JavaScript File is used for character select page
+
 let tableData;
 
 let charactersModal = document.getElementById("playerCharacters");
@@ -23,7 +25,6 @@ window.onload = function() {
     {
         let item = tableData[n];
         item.addEventListener("click", function() {
-            console.log(item);
             for(let j=0; j< tableData.length; j++)
             {             
                 let checkAttribute = tableData[j].hasAttribute("style");
