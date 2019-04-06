@@ -22,7 +22,19 @@ After all Life is lost, game is over and score is displayed on screen. It also h
 * Players have to select a character at the beginning of the game by clicking
 * Player Character movements are done by Arrow Keys : Up, Down, Left, Right  
 
+## Languages and Tools Used
+
+* HTML, CSS
+* HTML5 Canvas
+* JavaScript ES6
+
+## References
+
+* W3Schools
+* MDN Web Docs
+* Udacity Lecture
+
 ## Happy Playing! :)
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/) &copy; Suman Hansada
