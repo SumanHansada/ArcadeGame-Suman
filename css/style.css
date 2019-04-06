@@ -15,7 +15,7 @@ body {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    background-image: url("/images/brick-path.png");
+    background-image: url("../images/brick-path.png");
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   }
   
@@ -59,7 +59,7 @@ body {
     text-align: center;
     transition: all 0.2s;
     background: transparent;    
-    background-image: url("/images/blue-stone.png");
+    background-image: url("../images/blue-stone.png");
     width: 150px;
   }
   
@@ -84,7 +84,7 @@ body {
   }
   
   .character:hover {
-      background-image: url("/images/grass-block.png");
+      background-image: url("../images/grass-block.png");
       cursor: pointer;
     }
    
@@ -112,7 +112,7 @@ body {
       top: 0;
       width: 100%; /* Full width */
       height: 100%; /* Full height */
-      background-image: url("/images/blue-stone.png");
+      background-image: url("../images/blue-stone.png");
       background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   }
   
@@ -131,7 +131,7 @@ body {
     text-align: center;
     transition: all 0.2s;
     background: transparent;    
-    background-image: url("/images/blue-stone.png");
+    background-image: url("../images/blue-stone.png");
     width: 250px;
   }
   
