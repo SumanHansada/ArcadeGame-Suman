@@ -5,7 +5,7 @@ This is the project developed for Udacity Nanodegree - Classic Arcade Game Clone
 
 1. Clone the repository https://github.com/sumansjs/ArcadeGame-Suman.git
 2. Open the index.html in your browser
-3. Or Play the game here - [Live Demo](https://sumansjs.github.io/ArcadeGame-Suman/)
+3. Or Play the game here - [Live Demo](https://sumanhansada.github.io/ArcadeGame-Suman/)
 
 ## The Game
 
